@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+.main-contents-room{
+	padding: 40px 240px 0px 240px;
+	min-height: 340px;
+}
+
+.main-contents-room-template{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.main-contents-room-door{
+	background-color: white;
+	margin-top: 24px;
+}
+
+.main-contents-room-door:hover{
+	box-shadow: 0 0 100px rgba(255, 241, 202, 0.8), 0 0 8px rgba(255, 241, 202, 0.8), 0 0 15px rgba(255, 241, 202, 0.9);
+}
+
+.main-contents-room-exit-messeage{
+	font-size: 36px;
+	margin-bottom: 16px;
+	color: #151414;
+	text-align: center;
+}
+
+.main-contents-room-exit-door{
+	box-shadow: 0 0 100px rgba(255, 241, 202, 0.8), 0 0 8px rgba(255, 241, 202, 0.8), 0 0 15px rgba(255, 241, 202, 0.9);
+	height: 231px;
+	width: 400px;
+	background-color:white;
+	color: #8a8888;
+}
+
+.main-contents-room-nipopong{
+	width: 1000px;
+	font-size: 52px;
+	line-height: 240px;
+	color: #151414;
+}
+
+.main-contents-room-center{
+	width: 180px;
+}
+
+.room-door{
+	width: 228px;
+	height: 280px;
+}
+
+#white_door{
+	background-color: #f1f1f1;
+}
+
+#black_door{
+	background-color: black;
+}
+
+.eye_between_door{
+	width: inherit;
+}
+
+.eye_between_door_opened{
+	padding-top: 92px;
+}
+
+.eye_between_door_closed{
+	padding-top: 132px;
+}

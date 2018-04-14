@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+
+.main-contents-info{
+  height:100px;
+  display:  flex;
+  justify-content:  space-evenly;
+}
+
+figure.info-card {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  max-height: 220px;
+  color: #c6aa4e;
+  text-align: center;
+}
+figure.info-card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+figure.info-card .info-card-background {
+  max-width: 100%;
+  position: relative;
+  opacity: 0.9;
+  width: 500px;
+  min-height: 200px;
+}
+figure.info-card figcaption {
+  position: absolute;
+  top: 9%;
+  left: 7%;
+  right: 7%;
+  bottom: 56%;
+  border: 1px solid #c6aa4e;
+  border-width: 0 4px 4px;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+  background-color: #3b352d;
+}
+figure.info-card .heading {
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+figure.info-card h3 {
+  display: table;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+figure.info-card h3:before,
+figure.info-card h3:after {
+  position: absolute;
+  display: block;
+  width: 1000%;
+  height: 4px;
+  content: '';
+  background: #c6aa4e;
+  top: 50%;
+}
+figure.info-card h3:before {
+  left: -1000%;
+}
+figure.info-card h3:after {
+  right: -1000%;
+}
+figure.info-card p {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.info-card a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.info-card:hover .info-card-bacnground,
+figure.info-card.hover .info-card-background {
+  opacity: 0.15;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.info-card:hover figcaption,
+figure.info-card.hover figcaption {
+  top: 9%;
+  bottom: 9%;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.info-card:hover p,
+figure.info-card.hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}

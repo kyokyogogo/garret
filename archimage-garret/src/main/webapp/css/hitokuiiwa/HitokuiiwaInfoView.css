@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+
+.main-contents-info{
+  height: 100px;
+  width: 100%;
+  display:  flex;
+  justify-content:  space-evenly;
+  flex-direction: column;
+  text-align:  center;
+  padding: 0px;
+}
+
+.main-contents-info a {
+  color:#ccc;
+  text-decoration:none;
+}
+.main-contents-info h1 {
+  font-size:30px;
+  margin-bottom:40px;
+}
+
+.main-contents-info-btn-area {margin-top: 8px;}
+.hint-button {
+  border: 1px solid #7a7a7a;
+  padding: 4px 20px 8px 20px;
+  margin: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #666;
+  text-shadow: 0 -1px 0 #000;
+  -webkit-box-shadow: 0 0 0 1px #222;
+  box-shadow: 0 0 0 1px #222;
+}
+.hint-button:hover {
+  background-color: #6e6e6e; 
+}
+
+
+.main-contents-info-modal {
+  opacity:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  text-shadow:0 1px 0 #333;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  -webkit-transition: opacity .4s linear;
+  transition: opacity .4s linear;
+  -webkit-transform: translate(0,100%);
+  -ms-transform: translate(0,100%);
+  transform: translate(0,100%);
+}
+
+.main-contents-info-modal-text {
+  position:relative;
+  margin:60px 5% 5%;
+  padding:20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius:15px;
+  background-color:rgba(255,255,255,.2);
+  z-index:10;
+}
+
+.main-contents-info-modal h2 {
+  border-bottom:1px solid;
+  padding-bottom:20px;
+}
+
+.main-contents-info-modal .close {
+  display:block;
+  position: absolute;
+  top: 0;
+  left 0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.74);
+  z-index:1;
+}
+.main-contents-info-modal .close span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,.2);
+  cursor:pointer;
+}
+
+.main-contents-info-modal .close span {
+  text-indent: -9999px;
+}
+
+.main-contents-info-modal .close span:before,.main-contents-info-modal .close span:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  border: 1px solid #fff;
+  height: 30px;
+}
+
+.main-contents-info-modal .close span:before {
+  left: 19px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.main-contents-info-modal .close span:after {
+  right: 19px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hint-by-elder:target,
+#hint-by-teacher:target {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+
